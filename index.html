@@ -7,9 +7,26 @@
 	
    <body>
 game list
+	   
 	   <br>
 	   <br>
-	   <a href="learntofly3.swf">learn to fly 3</a>
+	   
+	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#button').click(function(){ 
+        if(!$('#iframe').length) {
+                $('#iframeHolder').html('<iframe id="iframe" src="http://summitgaming.tk/learntofly3.swf" width="700" height="450"></iframe>');
+        }
+    });   
+});
+</script>
+ 
+<button id="button">Learn to fly 3</button>
+<div id="iframeHolder"></div>
+	   
+	   <br>
+	   <br>
    </body>
 
 </html>
